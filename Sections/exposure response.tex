@@ -1,0 +1,40 @@
+\chapter{Exposure-Response Model}
+\section{Abstract}
+
+\section{Background and Literature Review}
+
+specific questions???
+model types?
+mixture model?
+scores? propensity scores?
+longitudinal health?
+lag?
+
+...? Health?\\
+
+%Another big recent development is the existence and availability of large biomedical datasets \citep{Ristevski2018BigHealthcare}. This has been seen across disciplines and has come with the rise of big data science techniques, such as digital data collection, cloud storage and big data analytics \citep{Hariri2019UncertaintyChallenges}, as well as a shift in perspective in the data world to more open access data and global data analysis \citep{Zhu2020Open-accessAcademia}. One main source of rich biomedical data in the UK is the UK Biobank, containing information on the genetics and health of half a million volunteer participants \citep{Collins2020UKBiobank}. Another, interesting dataset is the Millennium Cohort Study \citep{Joshi2016ThePolicy}, following the lives, family and health of around 19,000 young people across England, Scotland, and Wales. Most importantly for air pollution and mental health epidemiological modelling, both of these datasets include variables such as the participants' location, socioeconomic status, and mental health status, both clinical and subclinical measures
+
+%Before incorporating the health data into the model, it is important to assess it separately. First, an assessment of the participant sample will help to give a contextual basis of our analyses within the UK population. I am interested in the makeup of the participants age, sex, location, socioeconomic status, occupation, ethnicity, lifestyle, health status etc., particularly for vulnerable or underrepresented groups. I am also interested in identifying any clear trends in the mental health outcome data from the offset, maybe spatially, temporally or demographically, that can then potentially be explained via the air pollution or meterological variables. As for the definition of mental health outcomes/disorders, corresponding to the available UK Biobank variables, I will use the self-reported mental health indicators for depression, anxiety, and bipolar, along with the physician-derived depression, anxiety, and bipolar statuses. These sub-clinical measures will be interesting to assess the underlying mental health of the population, compared to acute mental health events, such as given by the diagnosed disorders in the Biobank data using the International Statistical Classification of Diseases and Related Health Problems (ICD) codes \citep{WorldHealthOrganisationICD-10Version:2019} for inpatient hospital visits.
+
+%Then for the exposure-response modelling, I will review and compare exposure-response estimation methods within a hierarchical Bayesian framework to then investigate a novel approach utilising the cutting-edge methods in multivariate spatiotemporal modelling with extensive contextual variables. I will start off by reviewing single-exposure effects, looking at each of the four pollutants separately and assessing the one-dimensional approaches first. A common basic approach is Generalised Linear Models (GLMs) with a linear Exposure-Response Function (ERF), such as the one seen in \cite{Shi2016Low-ConcentrationStudy}. The GLM approach can then be extended to non-linear Exposure-Response Functions (ERFs), for example, by using splines: \cite{Smith2000ThresholdArizona} gives an example of the use of B-splines and \cite{Daniels2000EstimatingCities} for cubic splines, both using a cross-validation method for the estimation of the splines. Generalised Additive Models (GAMs) are then a natural progression to more complicated relationship modelling, with similar linear and non-linear approaches available, again this can be seen in \cite{Smith2000ThresholdArizona}. Furthermore, I will investigate the lag effects of the exposure on the response, in a similar way to \cite{Shi2016Low-ConcentrationStudy}, with considerations on how we chose a lag through Goodness-of-fit tests as in \cite{Richardson2011LaggingAnalyses}. Finally, the extension to simultaneous exposure health effects should be considered, there are again a number of different approaches to this, but within the Bayesian framework I will mainly be interested in ERFs in regression models. An extension to multi-pollutant spline functions can be seen in \cite{Chen2013InfluenceChina} and a similar kernel function can be seen in \cite{Bobb2015BayesianMixtures}. The potential effect modifying effect of proximity to greenspaces can be easily incorporated into these regression models, where the effect of its inclusion can be assessed in a similar way to as in \cite{Ghosh2010PaternalMothers} and \cite{Mariet2021AssociationExposure}. Similarly, the previous considerations for the confounding and effect modifying properties of meteorological measurements (including temperature, humidity and wind) can be investigated through the model. For the purposes of this project, the air pollution and meteorological measurements are being considered as a proxy to direct measures of climate change: CO\textsubscript{2} and CO emissions are closely linked to NO\textsubscript{2} and SO\textsubscript{2} emissions \citep{Chen2007OutdoorEffects}; long-term temperature (or climatic temperature) increase is a common indication of global warming \citep[e.g.][]{Du2019ChangesHiatus}; and the levels of atmospheric Ozone are intricately linked to the greenhouse effect \citep{Meleux2007IncreaseChange}.
+
+%The novelty of my approach will come from the combination of the existing approaches from all directions and the extension to the inclusion of underlying health conditions, socioeconomic situations, and regional weather and climate. The proposed exposure-response model can then be assessed and compared to existing approaches through a simulation study and sensitivity analysis. Root mean squared error and interval coverage can be calculated from the simulated models in line with the methods in \cite{Hoskovec2021ModelStudy} and sensitivity analysis can be performed for the models' sensitivity to the inclusion of certain covariates, modelling assumptions (such as the buffer distances and any stationarity assumptions), and to identify particularly sensitive demographic groups to the effect's of air pollution exposure. \cite{Krewski2005ReanalysisAnalysis} undertakes a similar analysis for long-term exposure to fine particulate matter and sulfate-based air pollution on mortality.
+
+
+\section{Research Methods}
+\subsection{Biobank Data}
+
+\subsection{Other Health Data??}
+
+\subsection{Variables}
+
+\subsection{Exposure-Response Model}
+longitudinal mixed model cohort study? like MESA Air study
+
+\section{Current Progress}
+Getting the Biobank dataset, any data cleaning, other datasets
+
+\section{Next Steps}
+
+
+\section{Expected Results and Significance}

@@ -1,0 +1,56 @@
+\documentclass[a4paper,11pt,twoside]{report}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=3cm]{geometry}
+\usepackage{natbib}
+\usepackage{setspace}
+\bibpunct{(}{)}{;}{a}{}{,}
+\usepackage{listings}
+\usepackage{amsfonts}
+
+
+\include{thesis.preamble}
+
+
+\begin{document}
+
+\title{\LARGE {\bf Bayesian Statistical Methods for Air Pollution and Mental Health Research in a changing climate}\\
+ \vspace*{6mm}
+}
+
+\author{Abi Riley}
+\submitdate{October 2022}
+
+\normallinespacing
+\maketitle
+
+\preface
+\input{Sections/supervisors}
+\input{Sections/Statement of Originality}
+\input{Sections/Copyright Declaration}
+\input{Sections/abstract}
+%\input{dedication/dedication}
+%\input{quotes/quotes}
+
+\body
+\onehalfspacing
+\input{Sections/introduction}
+\input{Sections/exposure model}
+\input{Sections/other objectives}
+%\input{Sections/exposure response}
+%\input{Sections/causality}
+\input{Sections/conclusion}
+\input{Sections/other}
+
+
+\appendix
+% appendices come here
+\input{Sections/preprocessing}
+\input{Sections/prelimanalysis}
+\input{Sections/Health Datasets}
+\input{Sections/github}
+
+
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{agsm}
+\bibliography{references.bib}
+
+\end{document}

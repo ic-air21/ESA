@@ -1,0 +1,15 @@
+\chapter{Data Preprocessing} \label{App:Preprocessing}
+
+Ground monitoring data is obtained as point-referenced data at the UK monitoring stations, with specified site name, the downloads were reformatted to be read into R and can be matched to Defra's information on monitoring stations by site name, for exact coordinates, environment type, and region. Missing data??? \% of measurements???
+
+The 11,682 granules of MCD19A2 level 2 gridded satellite-derived aerosol optical depth is bulk downloaded as .hdf files, which can be extracted into R using the gdalUtils package and converted to raster layers for: Aerosol Optical Depth at 047 micron; Aerosol Optical Depth at 055 micron; and AOD Uncertainty at 047 micron. Which can be aggregated to mean rasters for each variable by calendar month. The raw data is on a 1km x 1km gridded sinusoidal projection, and can be transformed to a 1km x 1km gridded Universal Transverse Mercator (UTM) projection, with EPSG:27700, also known as the British National Grid (BNG) or OSGB 1936. See GitHub repository \ref{ 
+
+Across the entire time period, three days were missing MCD19A2 files for the required swaths: 03/10/2005, 29/03/2006, 31/12/2020. Available documentation suggests that these days are due to technical errors or time determination, so can be considered missing at random and removed from the monthly aggregation. 
+
+The Pollution Climate Mapping (PCM) model .csv files can be simply read into R and converted to a raster from the x-y coordinates and modelled value. The coordinates are given on the 1km x 1km BNG.
+
+For the meterological variables, the .nc files can be imported into R using ncvar\_get, converted to rasters and assigned the 1km x 1km BNG.
+
+BLH??? and adjusting AOD? \cite{He2021TheAOD}
+ERA5 Boundary Layer Height
+relation to humidity \cite{He2019AGuangzhou} , pblh \cite{He2019AGuangzhou} 
